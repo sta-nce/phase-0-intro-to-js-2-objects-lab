@@ -35,8 +35,10 @@ console.log(updated);
 
 
 function destructivelyDeleteFromEmployeeByKey(obj,key){
-    obj[key];
-    return obj;
+    let newEmployee = employee;
+    delete newEmployee.name;
+    delete newEmployee.streetAddress;
+    return newEmployee;
 };
 
 const final = destructivelyDeleteFromEmployeeByKey(employee,"name");
